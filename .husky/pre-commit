@@ -1,0 +1,4 @@
+
+npm lint-staged
+npm run precommit:checks
+

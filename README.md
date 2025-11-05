@@ -1,46 +1,127 @@
-# Getting Started with Create React App
+Assignment 12
+**Student Name:** Katsia Ilunga
+**Course:** Web Development
+**Assignment:** Building a Component Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What This Project Is About
 
-## Available Scripts
+This project is a collection of 13 reusable UI components built with React. Each component can be used to build websites and web applications. The components are styled, tested, and documented using Storybook.
 
-In the project directory, you can run:
+## List of Components
 
-### `npm start`
+This library includes the following 13 components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Button
+2. Label
+3. Text
+4. Table
+5. Table Header
+6. Table Row
+7. Table Cell
+8. Table Footer
+9. Dropdown
+10. Radio Button
+11. Image
+12. Hero Image
+13. Card
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## What Each Component Includes
 
-### `npm test`
+Every component has 5 files:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Types file** - Defines what data the component needs
+- **Component file** - The actual React component code
+- **Stories file** - Shows the component in Storybook
+- **Tests file** - Contains 2 tests (visibility and disabled state)
+- **Index file** - Exports the component for easy import
 
-### `npm run build`
+## How to Run This Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 1: Install the Required Software
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Before you start, make sure you have:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js installed on your computer
+- Docker Desktop installed and running
 
-### `npm run eject`
+### Step 2: Download the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+bash
+git clone <your-github-link>
+cd ilunga_katsia_ui_garden
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Step 3: Install All Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+bash
+npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This command downloads all the packages needed for the project.
 
-## Learn More
+### Step 4: Start the Development Server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This opens the app in your browser at: http://localhost:3000
+
+### Step 5: View Components in Storybook
+
+bash
+npm run storybook
+
+This opens Storybook in your browser at: http://localhost:6006
+
+Storybook lets you see and test each component individually.
+
+### Step 6: Run All Tests
+
+bash
+npm test
+
+This runs all the component tests to make sure everything works correctly.
+
+## How to Run with Docker
+
+Docker creates a container that packages your app so it can run anywhere.
+
+### Step 1: Build the Docker Image
+
+bash
+docker build -t ilunga_katsia_coding_assignment12 .
+
+This creates a Docker image from your project. It may take a few minutes.
+
+### Step 2: Run the Docker Container
+
+bash
+docker run -p 8083:8083 --name ilunga_katsia_coding_assignment12 ilunga_katsia_coding_assignment12
+
+This starts your app in a Docker container.
+
+### Step 3: View Your App
+
+Open your browser and go to: **http://localhost:8083**
+
+## Project Folder Structure
+
+``
+ilunga_katsia_ui_garden/
+src/
+│ components/
+│ │ Button/
+│ │ Label/
+│ │ Text/
+│ │ Table/
+│ │ TableHeader/
+│ │ TableRow/
+│ │ TableCell/
+│ │ mTableFooter/
+│ │ Dropdown/
+│ │ RadioButton/
+│ │ Img/
+│ │ HeroImage/
+│ │ Card/
+│ App.tsx
+Dockerfile
+package.json
+README.md

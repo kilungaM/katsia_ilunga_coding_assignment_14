@@ -20,6 +20,21 @@ const projects = [
     link: 'https://github.com/kilungaM/ilunga_katsia_ui_garden',
     tech: ['React', 'Storybook', 'CSS'],
   },
+
+  {
+    title: 'Ilunga Katsia Site',
+    description: 'Previous portfolio site showcasing my work and skills.',
+    tech: ['React', 'CSS'],
+    extraLines: ['Hosted on GitHub Pages', 'Used Storybook for UI components'],
+    link: 'https://github.com/kilungaM/katsia_ilunga_site',
+  },
+  {
+    title: 'Keep Warm Ministries',
+    description: 'A content management system for a local ministry.',
+    tech: ['React', 'PHP', 'MySQL'],
+    extraLines: ['Admin and user features', 'WYSIWYG editor integration'],
+    link: 'https://github.com/kilungaM/keep_warm_ministries',
+  },
 ];
 
 export default projects;

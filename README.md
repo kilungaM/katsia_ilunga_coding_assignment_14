@@ -1,10 +1,10 @@
-#  Portfolio Website – Assignment 14
+# Portfolio Website – Assignment 14
 
 This project is a portfolio website built using **Create React App** and packaged and deployed using **Docker**. The site highlights course work completed throughout the Full-Stack Web Development program.
 
 ---
 
-##  Running the Application with Docker
+## Running the Application with Docker
 
 ### 1️ Build the Docker Image
 
@@ -85,3 +85,4 @@ npm test
 
 
 
+```
